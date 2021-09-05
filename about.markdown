@@ -4,4 +4,7 @@ title: About
 permalink: /about/
 ---
 
-# About me
+## title
+# subheader
+*italics* type something **bold**
+[hyperlink](google.com)
