@@ -6,210 +6,194 @@ permalink: /card-trick/
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2022.5">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 21.0px; font: 14.0px Menlo; color: #cacaca; -webkit-text-stroke: #cacaca}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 21.0px; font: 14.0px Menlo; color: #cacaca; -webkit-text-stroke: #cacaca; min-height: 16.0px}
-    span.s1 {font-kerning: none}
-  </style>
+<title>Spooky mind reader</title>
+<script>
+function readMind() {
+  var r1 = document.getElementById("r1").value;
+  var r2 = document.getElementById("r2").value;
+  var r3 = document.getElementById("r3").value;
+  var r4 = document.getElementById("r4").value;
+  var s1 = document.getElementById("s1").value;
+  var s2 = document.getElementById("s2").value;
+  var s3 = document.getElementById("s3").value;
+  var s4 = document.getElementById("s4").value;
+
+  var s5 = s1;
+  var offset = orderOf(r2,s2,r3,s3,r4,s4);
+  console.log(offset)
+  var r5 = offset + parseInt(r1);
+  if (r5 >= 15) r5 = r5 - 13;
+  document.getElementById("result").innerHTML = "the " + r2t(r5) + " of " + s2t(s5) + "!";
+}
+
+function orderOf(r2,s2,r3,s3,r4,s4) {
+  if (compare(r2,s2, r3,s3)) {
+    // 2 > 3
+    if (compare(r2,s2, r4,s4)) {
+      //card 2 is largest
+      if (compare(r3,s3, r4,s4)) {
+        // 2 > 3 > 4
+        return 6;
+      } else {
+        // 2 > 4 > 3
+        return 5;
+      }
+    } else {
+      // 4 > 2 > 3
+      return 3;
+    }
+  } else {
+    // 3 > 2
+    if (compare(r3,s3, r4,s4)) {
+      // card 3 is largest
+      if (compare(r2,s2, r4,s4)) {
+        // 3 > 2 > 4
+        return 4;
+      } else {
+        // 3 > 4 > 2
+        return 2;
+      }
+    } else {
+      // 4 > 3 > 2
+      return 1;
+    }
+  }
+}
+function compare(r1, s1, r2, s2) {
+  if (r1 > r2) return 1;
+  if (r2 > r1) return 0;
+  if (s2n(s1) > s2n(s2)) return 1;
+  return 0;
+}
+function s2n(s) {
+  if (s == "c") return 1;
+  if (s == "h") return 2;
+  if (s == "s") return 3;
+  if (s == "d") return 4;
+}
+function r2t(r) {
+  if (r <= 10) return r;
+  if (r == 11) return "jack";
+  if (r == 12) return "queen";
+  if (r == 13) return "king";
+  if (r == 14) return "ace";
+}
+function s2t(s) {
+  if (s == "c") return "clubs";
+  if (s == "h") return "<a style='color:red;'>hearts</a>";
+  if (s == "s") return "spades";
+  if (s == "d") return "<a style='color:red;'>diamonds</a>";
+}
+</script>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;title&gt;Spooky mind reader&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1">&lt;script&gt;</span></p>
-<p class="p1"><span class="s1">function readMind() {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>var r1 = document.getElementById("r1").value;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>var r2 = document.getElementById("r2").value;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>var r3 = document.getElementById("r3").value;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>var r4 = document.getElementById("r4").value;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>var s1 = document.getElementById("s1").value;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>var s2 = document.getElementById("s2").value;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>var s3 = document.getElementById("s3").value;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>var s4 = document.getElementById("s4").value;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>var s5 = s1;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>var offset = orderOf(r2,s2,r3,s3,r4,s4);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log(offset)</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>var r5 = offset + parseInt(r1);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (r5 &gt;= 15) r5 = r5 - 13;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>document.getElementById("result").innerHTML = "the " + r2t(r5) + " of " + s2t(s5) + "!";</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">function orderOf(r2,s2,r3,s3,r4,s4) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (compare(r2,s2, r3,s3)) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// 2 &gt; 3</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>if (compare(r2,s2, r4,s4)) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>//card 2 is largest</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if (compare(r3,s3, r4,s4)) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 2 &gt; 3 &gt; 4</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>return 6;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>} else {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 2 &gt; 4 &gt; 3</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>return 5;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>} else {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// 4 &gt; 2 &gt; 3</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>return 3;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>} else {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// 3 &gt; 2</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>if (compare(r3,s3, r4,s4)) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// card 3 is largest</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if (compare(r2,s2, r4,s4)) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 3 &gt; 2 &gt; 4</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>return 4;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>} else {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 3 &gt; 4 &gt; 2</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>return 2;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>} else {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// 4 &gt; 3 &gt; 2</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>return 1;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">function compare(r1, s1, r2, s2) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (r1 &gt; r2) return 1;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (r2 &gt; r1) return 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (s2n(s1) &gt; s2n(s2)) return 1;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>return 0;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">function s2n(s) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (s == "c") return 1;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (s == "h") return 2;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (s == "s") return 3;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (s == "d") return 4;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">function r2t(r) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (r &lt;= 10) return r;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (r == 11) return "jack";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (r == 12) return "queen";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (r == 13) return "king";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (r == 14) return "ace";</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">function s2t(s) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (s == "c") return "clubs";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (s == "h") return "&lt;a style='color:red;'&gt;hearts&lt;/a&gt;";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (s == "s") return "spades";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (s == "d") return "&lt;a style='color:red;'&gt;diamonds&lt;/a&gt;";</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1">First visible card is:</span></p>
-<p class="p1"><span class="s1">&lt;select name="r1" id="r1"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="2"&gt;2&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="3"&gt;3&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="4"&gt;4&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="5"&gt;5&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="6"&gt;6&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="7"&gt;7&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="8"&gt;8&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="9"&gt;9&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="10"&gt;10&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="11"&gt;J&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="12"&gt;Q&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="13"&gt;K&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="14"&gt;A&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/select&gt;</span></p>
-<p class="p1"><span class="s1">&lt;select name="s1" id="s1"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="c"&gt;&amp;clubs;&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="h" style="color:red;"&gt;&amp;hearts;&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="s"&gt;&amp;spades;&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="d" style="color:red;"&gt;&amp;diams;&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/select&gt;&lt;br /&gt;</span></p>
-<p class="p1"><span class="s1">Second visible card is:</span></p>
-<p class="p1"><span class="s1">&lt;select name="r2" id="r2"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="2"&gt;2&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="3"&gt;3&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="4"&gt;4&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="5"&gt;5&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="6"&gt;6&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="7"&gt;7&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="8"&gt;8&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="9"&gt;9&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="10"&gt;10&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="11"&gt;J&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="12"&gt;Q&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="13"&gt;K&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="14"&gt;A&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/select&gt;</span></p>
-<p class="p1"><span class="s1">&lt;select name="s2" id="s2"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="c"&gt;&amp;clubs;&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="h" style="color:red;"&gt;&amp;hearts;&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="s"&gt;&amp;spades;&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="d" style="color:red;"&gt;&amp;diams;&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/select&gt;&lt;br /&gt;</span></p>
-<p class="p1"><span class="s1">Third visible card is:</span></p>
-<p class="p1"><span class="s1">&lt;select name="r3" id="r3"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="2"&gt;2&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="3"&gt;3&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="4"&gt;4&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="5"&gt;5&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="6"&gt;6&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="7"&gt;7&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="8"&gt;8&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="9"&gt;9&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="10"&gt;10&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="11"&gt;J&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="12"&gt;Q&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="13"&gt;K&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="14"&gt;A&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/select&gt;</span></p>
-<p class="p1"><span class="s1">&lt;select name="s3" id="s3"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="c"&gt;&amp;clubs;&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="h" style="color:red;"&gt;&amp;hearts;&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="s"&gt;&amp;spades;&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="d" style="color:red;"&gt;&amp;diams;&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/select&gt;&lt;br /&gt;</span></p>
-<p class="p1"><span class="s1">Final visible card is:</span></p>
-<p class="p1"><span class="s1">&lt;select name="r4" id="r4"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="2"&gt;2&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="3"&gt;3&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="4"&gt;4&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="5"&gt;5&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="6"&gt;6&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="7"&gt;7&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="8"&gt;8&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="9"&gt;9&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="10"&gt;10&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="11"&gt;J&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="12"&gt;Q&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="13"&gt;K&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="14"&gt;A&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/select&gt;</span></p>
-<p class="p1"><span class="s1">&lt;select name="s4" id="s4"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="c"&gt;&amp;clubs;&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="h" style="color:red;"&gt;&amp;hearts;&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="s"&gt;&amp;spades;&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;option value="d" style="color:red;"&gt;&amp;diams;&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/select&gt;&lt;br /&gt;</span></p>
-<p class="p1"><span class="s1">&lt;br /&gt;</span></p>
-<p class="p1"><span class="s1">Your hidden card is &lt;b&gt;&lt;a id="result"&gt;&lt;/a&gt;&lt;/b&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;style&gt;</span></p>
-<p class="p1"><span class="s1">.button {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background-color: #696969;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: black;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding: 3px 8px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-decoration: none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display: inline-block;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size: 16px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor: pointer;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;a href="#" class="button" onclick="readMind()"&gt;read my mind&lt;/a&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+First visible card is:
+<select name="r1" id="r1">
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">J</option>
+  <option value="12">Q</option>
+  <option value="13">K</option>
+  <option value="14">A</option>
+</select>
+<select name="s1" id="s1">
+  <option value="c">&clubs;</option>
+  <option value="h" style="color:red;">&hearts;</option>
+  <option value="s">&spades;</option>
+  <option value="d" style="color:red;">&diams;</option>
+</select><br />
+Second visible card is:
+<select name="r2" id="r2">
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">J</option>
+  <option value="12">Q</option>
+  <option value="13">K</option>
+  <option value="14">A</option>
+</select>
+<select name="s2" id="s2">
+  <option value="c">&clubs;</option>
+  <option value="h" style="color:red;">&hearts;</option>
+  <option value="s">&spades;</option>
+  <option value="d" style="color:red;">&diams;</option>
+</select><br />
+Third visible card is:
+<select name="r3" id="r3">
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">J</option>
+  <option value="12">Q</option>
+  <option value="13">K</option>
+  <option value="14">A</option>
+</select>
+<select name="s3" id="s3">
+  <option value="c">&clubs;</option>
+  <option value="h" style="color:red;">&hearts;</option>
+  <option value="s">&spades;</option>
+  <option value="d" style="color:red;">&diams;</option>
+</select><br />
+Final visible card is:
+<select name="r4" id="r4">
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">J</option>
+  <option value="12">Q</option>
+  <option value="13">K</option>
+  <option value="14">A</option>
+</select>
+<select name="s4" id="s4">
+  <option value="c">&clubs;</option>
+  <option value="h" style="color:red;">&hearts;</option>
+  <option value="s">&spades;</option>
+  <option value="d" style="color:red;">&diams;</option>
+</select><br />
+<br />
+Your hidden card is <b><a id="result"></a></b>
+
+<style>
+.button {
+  background-color: #696969;
+  color: black;
+  padding: 3px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+</style>
+<a href="#" class="button" onclick="readMind()">read my mind</a>
+
+
+
 </body>
+
 </html>
