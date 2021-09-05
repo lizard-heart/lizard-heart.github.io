@@ -4,4 +4,4 @@ title: Projects
 permalink: /projects/
 ---
 
-[card trick mind reader](/card-trick.html)
+[card trick mind reader](/card-trick)
