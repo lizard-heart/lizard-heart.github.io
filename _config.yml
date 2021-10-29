@@ -21,7 +21,7 @@
 title: Henry's Site
 email: hgustafson@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Youtube: https://www.youtube.com/channel/UC0ZCat9S6KoR7dAiIezBfhg
+  Youtube: [https://www.youtube.com/channel/UC0ZCat9S6KoR7dAiIezBfhg](https://www.youtube.com/channel/UC0ZCat9S6KoR7dAiIezBfhg)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
