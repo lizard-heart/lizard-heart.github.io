@@ -33,6 +33,37 @@ theme: minima
 plugins:
   - jekyll-feed
 
+
+minima:
+  social_links:
+    twitter: jekyllrb
+    github: jekyll
+    stackoverflow: "11111"
+    dribbble: jekyll
+    facebook: jekyll
+    flickr: jekyll
+    instagram: jekyll
+    linkedin: jekyll
+    pinterest: jekyll
+    telegram: jekyll
+    microdotblog: jekyll
+    keybase: jekyll
+
+    mastodon:
+     - username: jekyll
+       instance: example.com
+     - username: jekyll2
+       instance: example.com
+
+    gitlab:
+     - username: jekyll
+       instance: example.com
+     - username: jekyll2
+       instance: example.com
+
+    youtube: jekyll
+    youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    youtube_channel_name: CloudCannon
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
