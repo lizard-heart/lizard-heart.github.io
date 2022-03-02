@@ -4,7 +4,5 @@ title: About
 permalink: /about/
 ---
 
-## title
-# subheader
-*italics* type something **bold**
-[hyperlink](google.com)
+## [Youtube Channel](https://www.youtube.com/channel/UC0ZCat9S6KoR7dAiIezBfhg)
+## [Github](https://github.com/lizard-heart)
