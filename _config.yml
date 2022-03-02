@@ -32,7 +32,8 @@ youtube_channel: https://www.youtube.com/channel/UC0ZCat9S6KoR7dAiIezBfhg
 theme: minima
 plugins:
   - jekyll-feed
-
+  
+google-analytics: G-LFTJCSZ3S9
 
 minima:
   skin: dark
