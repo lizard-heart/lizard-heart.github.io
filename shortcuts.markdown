@@ -4,7 +4,7 @@ title: Siri Shortcuts
 permalink: /shortcuts/
 ---
 
-# Archive of siri shortcuts I created and use
+#### Archive of siri shortcuts I created and use
 
 ## Timery Shortcuts
 ### [timer-from-calendar](https://www.icloud.com/shortcuts/cf95030290d74218a7041d422128a824)
