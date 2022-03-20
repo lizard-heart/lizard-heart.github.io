@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "Atom package for bunch syntax published"
+date:   2022-03-20 12:00:00 -0700
+categories: coding project
+---
+[Bunch][https://bunchapp.co] is a Mac app that allows you to create plaintext files to launch a "bunch" of apps and change system settings. It is great for [contextual computing](https://en.wikipedia.org/wiki/Context_awareness) and I use it to automatically rearrange windows with [hammerspoon](http://www.hammerspoon.org), set a Focus Mode with Shortcuts, open a perspective in [Omnifocus](https://www.omnigroup.com/omnifocus/), and start a timer with [Timery][https://timeryapp.com] all at the same time when I switch contexts. The only problem is that it is a little bit annoying to edit these plaintext files without any syntax highlighting to see commands and strings and stuff like that.
+
+To fix this, I created a plugin for my favorite text editor, [atom](https://atom.io) (I'm using it right now as I write this), which adds support for `.bunch` files. It also includes. snippets for common commands.
+
+# [install the plugin here](https://atom.io/packages/language-bunch)
+# [contribute to the plugin on github](https://github.com/lizard-heart/language-bunch)
+
+## Creating atom language plugins
+I created this plugin as a treesitter language plugin for atom. It has a very simple file structure:
+{% highlight json%}
+language-bunch
+├── LICENSE
+├── README.md
+├── grammars
+│   └── bunch.cson
+├── snippets
+│   └── bunch.cson
+└── package.json
+{% end highlight %}
+
+### Syntax highlighting
+The `grammars/bunch.cson` file has a `patterns` field that lets you patch [regex](https://en.wikipedia.org/wiki/Regular_expression) patterns, and tell Atom what the text represents, a string, a variable, a command, etc. For example, here is the code to match comments in `.bunch` files.
+{% highlight json%}
+{
+	name: 'comment.line.bunch'
+	match: '#.*$'
+}
+{% end highlight %}
+
+### Snippets
+Then, in the `snippets/bunch.cson` file, you can list a "prefix" and a "body" to show autocomplete suggestions for common commands. For example, here are a few commands I use for bunch files.
+{% highlight json%}
+'display':
+	'prefix': 'di'
+	'body': 'display '
+'dark mode':
+	'prefix': 'da'
+	'body': 'dark mode'
+'light mode':
+	'prefix': 'li'
+	'body': 'light mode'
+'wallpaper':
+	'prefix': 'wal'
+	'body': 'wallpaper'
+{% end highlight %}
