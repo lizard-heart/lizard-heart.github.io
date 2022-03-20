@@ -22,7 +22,7 @@ language-bunch
 ├── snippets
 │   └── bunch.cson
 └── package.json
-{% end highlight %}
+{% endhighlight %}
 
 ### Syntax highlighting
 The `grammars/bunch.cson` file has a `patterns` field that lets you patch [regex](https://en.wikipedia.org/wiki/Regular_expression) patterns, and tell Atom what the text represents, a string, a variable, a command, etc. For example, here is the code to match comments in `.bunch` files.
@@ -31,7 +31,7 @@ The `grammars/bunch.cson` file has a `patterns` field that lets you patch [regex
 	name: 'comment.line.bunch'
 	match: '#.*$'
 }
-{% end highlight %}
+{% endhighlight %}
 
 ### Snippets
 Then, in the `snippets/bunch.cson` file, you can list a "prefix" and a "body" to show autocomplete suggestions for common commands. For example, here are a few commands I use for bunch files.
@@ -48,4 +48,4 @@ Then, in the `snippets/bunch.cson` file, you can list a "prefix" and a "body" to
 'wallpaper':
 	'prefix': 'wal'
 	'body': 'wallpaper'
-{% end highlight %}
+{% endhighlight %}
