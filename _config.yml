@@ -33,6 +33,8 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+google_analytics: "G-LFTJCSZ3S9"
+
 minima:
   skin: dark
 # Exclude from processing.
