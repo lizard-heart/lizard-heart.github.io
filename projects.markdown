@@ -3,7 +3,8 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
-## [Siri Shortcuts](https://lizard-heart.github.io/shortcuts/)
+## Siri Shortcuts
+[My archive of Siri Shortcuts](https://lizard-heart.github.io/shortcuts/)
 
 ## Obsidian Plugins
 - [comment plugin](https://github.com/lizard-heart/comment-plugin-obsidian)
