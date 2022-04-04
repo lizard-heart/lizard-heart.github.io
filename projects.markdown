@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 ## Siri Shortcuts
-[My archive of Siri Shortcuts](https://lizard-heart.github.io/shortcuts/)
+[My archive of Siri Shortcuts](/shortcuts/)
 
 ## Obsidian Plugins
 - [comment plugin](https://github.com/lizard-heart/comment-plugin-obsidian)
@@ -18,8 +18,9 @@ creates a presentation with a slide for each obsidian note in a chain from one t
 - [email processing](https://github.com/lizard-heart/omnifocus-email-processing)
 
 ## Miscellaneous
-- [card trick mind reader](/card-trick)
+- [card trick mind reader](/card-trick/)
 - [collatz ratios](https://github.com/lizard-heart/collatz-ratios)
 - [snake](https://snake.lizardheart.repl.co)
+- [dark css theme for wikipedia](https://github.com/lizard-heart/wikiDarkMode) which looks a lot like this site
 
 ## If you want any of these things, [hire](/hire) me!
