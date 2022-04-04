@@ -13,7 +13,7 @@ To fix this, I created a plugin for my favorite text editor, [atom](https://atom
 
 ## Creating atom language plugins
 I created this plugin as a treesitter language plugin for atom. It has a very simple file structure:
-{% highlight json%}
+{% highlight yaml%}
 language-bunch
 ├── LICENSE
 ├── README.md
@@ -26,26 +26,26 @@ language-bunch
 
 ### Syntax highlighting
 The `grammars/bunch.cson` file has a `patterns` field that lets you patch [regex](https://en.wikipedia.org/wiki/Regular_expression) patterns, and tell Atom what the text represents, a string, a variable, a command, etc. For example, here is the code to match comments in `.bunch` files.
-{% highlight json%}
+{% highlight yaml%}
 {
-	name: 'comment.line.bunch'
-	match: '#.*$'
+    name: 'comment.line.bunch'
+    match: '#.*$'
 }
 {% endhighlight %}
 
 ### Snippets
 Then, in the `snippets/bunch.cson` file, you can list a "prefix" and a "body" to show autocomplete suggestions for common commands. For example, here are a few commands I use for bunch files.
-{% highlight json%}
+{% highlight yaml%}
 'display':
-	'prefix': 'di'
-	'body': 'display '
+    'prefix': 'di'
+    'body': 'display '
 'dark mode':
-	'prefix': 'da'
-	'body': 'dark mode'
+    'prefix': 'da'
+    'body': 'dark mode'
 'light mode':
-	'prefix': 'li'
-	'body': 'light mode'
+    'prefix': 'li'
+    'body': 'light mode'
 'wallpaper':
-	'prefix': 'wal'
-	'body': 'wallpaper'
+    'prefix': 'wal'
+    'body': 'wallpaper'
 {% endhighlight %}
