@@ -4,7 +4,7 @@ title:  "Atom package for bunch syntax published"
 date:   2022-03-20 12:00:00 -0700
 categories: coding project
 ---
-[Bunch](https://bunchapp.co) is a Mac app that allows you to create plaintext files to launch a "bunch" of apps and change system settings. It is great for [contextual computing](https://en.wikipedia.org/wiki/Context_awareness) and I use it to automatically rearrange windows with [hammerspoon](http://www.hammerspoon.org), set a Focus Mode with Shortcuts, open a perspective in [Omnifocus](https://www.omnigroup.com/omnifocus/), and start a timer with [Timery][https://timeryapp.com] all at the same time when I switch contexts. The only problem is that it is a little bit annoying to edit these plaintext files without any syntax highlighting to see commands and strings and stuff like that.
+[Bunch](https://bunchapp.co) is a Mac app that allows you to create plaintext files to launch a "bunch" of apps and change system settings. It is great for [contextual computing](https://en.wikipedia.org/wiki/Context_awareness) and I use it to automatically rearrange windows with [hammerspoon](http://www.hammerspoon.org), set a Focus Mode with Shortcuts, open a perspective in [Omnifocus](https://www.omnigroup.com/omnifocus/), and start a timer with [Timery](https://timeryapp.com) all at the same time when I switch contexts. The only problem is that it is a little bit annoying to edit these plaintext files without any syntax highlighting to see commands and strings and stuff like that.
 
 To fix this, I created a plugin for my favorite text editor, [atom](https://atom.io) (I'm using it right now as I write this), which adds support for `.bunch` files. It also includes. snippets for common commands.
 
