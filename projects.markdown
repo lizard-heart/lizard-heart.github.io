@@ -21,3 +21,5 @@ creates a presentation with a slide for each obsidian note in a chain from one t
 - [card trick mind reader](/card-trick)
 - [collatz ratios](https://github.com/lizard-heart/collatz-ratios)
 - [snake](https://snake.lizardheart.repl.co)
+
+## If you want any of these things, [hire](/hire) me!
