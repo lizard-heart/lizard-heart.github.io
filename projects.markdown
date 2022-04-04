@@ -3,6 +3,10 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
+## Wolfram Language Projects
+- [Game graphs of Tic-Tac-Toe-like games](https://community.wolfram.com/groups/-/m/t/2317406)
+- [Quantifying language efficiency](https://community.wolfram.com/groups/-/m/t/2456491)
+
 ## Siri Shortcuts
 [My archive of Siri Shortcuts](/shortcuts/)
 
@@ -23,4 +27,8 @@ creates a presentation with a slide for each obsidian note in a chain from one t
 - [snake](https://snake.lizardheart.repl.co)
 - [dark css theme for wikipedia](https://github.com/lizard-heart/wikiDarkMode) which looks a lot like this site
 
-## If you want any of these things, [hire](/hire) me!
+## YouTube Videos
+- [Watch all videos I have made here](/videos/)
+- [Subscribe to my YouTube channel here](https://www.youtube.com/channel/UC0ZCat9S6KoR7dAiIezBfhg/)
+
+## If any of these projects look interesting, [hire me](/hire)!
