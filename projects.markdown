@@ -15,6 +15,7 @@ permalink: /projects/
 adds pane for comments about a note similar to google docs. use a shared syncing service and different usernames to collaborate.
 - [journey presentation](https://github.com/lizard-heart/obsidian-journey-presentation)
 creates a presentation with a slide for each obsidian note in a chain from one to another
+- [wordnik definitions](https://github.com/lizard-heart/obsidian-wordnik-definitions) pastes definitions from wordnik.com into a note (either the title of the note or a custom search term)
 
 ## OmniFocus Plugins
 - [start toggl timer](https://github.com/lizard-heart/omni-focus-start-toggl-timer)
@@ -26,6 +27,8 @@ creates a presentation with a slide for each obsidian note in a chain from one t
 - [collatz ratios](https://github.com/lizard-heart/collatz-ratios)
 - [snake](https://snake.lizardheart.repl.co)
 - [dark css theme for wikipedia](https://github.com/lizard-heart/wikiDarkMode) which looks a lot like this site
+- [atom package for bunch syntax](https://atom.io/packages/language-bunch)
+    - [Read about the plugin here](/coding/project/2022/03/20/bunch/)
 
 ## YouTube Videos
 - [Watch all videos I have made here](/videos/)
