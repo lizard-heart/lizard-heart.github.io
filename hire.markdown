@@ -5,10 +5,38 @@ permalink: /hire/
 ---
 
 ## Directly
-- [Obsidian plugins](mailto:hgustafson@protonmail.com?subject=Obsidian%20Obsidian%20Plugin%20Hire)
-- [OmniFocus plugins](mailto:hgustafson@protonmail.com?subject=Omnifocus%20Plugin%20Hire)
-- [Web-based automations](mailto:hgustafson@protonmail.com?subject=Web%20Automation%20Hire)
-- [Discord bot](mailto:hgustafson@protonmail.com?subject=Discord%20Bot%20Hire)
+Here are the types of projects I can do (see examples [here](/projects/)):
+- **Obsidian plugins**
+- **OmniFocus plugins**
+- **Web-based automations**
+- **Discord bots**
+
+### Contact Me 
+<form
+  action="https://formspree.io/f/mqkndrqe"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <br>
+  <label for="order-type">Pick a project type:
+    <select name="project-type" id="project-type">
+        <option value="omnifocus">An OmniFocus Plugin</option>
+        <option value="obsidian">An Obsidian Plugin</option>
+        <option value="automation">A Web-based Automation</option>
+        <option value="discord">A Discord Bot</option>
+    </select>
+  </label>
+  <br>
+  <label>
+    Please describe what you are looking for:
+    <br>
+    <textarea class = "form-text-area" name="message"></textarea>
+  </label>
+  <button class="submit-button" type="submit">Send</button>
+</form>
 
 ## Fiverr
 If you prefer, you can go to [my fiverr profile](https://www.fiverr.com/hen31415) which has the same things:

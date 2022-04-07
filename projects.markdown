@@ -30,8 +30,8 @@ creates a presentation with a slide for each obsidian note in a chain from one t
 - [atom package for bunch syntax](https://atom.io/packages/language-bunch)
     - [Read about the plugin here](/coding/project/2022/03/20/bunch/)
 
-## YouTube Videos
+<!-- ## YouTube Videos
 - [Watch all videos I have made here](/videos/)
-- [Subscribe to my YouTube channel here](https://www.youtube.com/channel/UC0ZCat9S6KoR7dAiIezBfhg/)
+- [Subscribe to my YouTube channel here](https://www.youtube.com/channel/UC0ZCat9S6KoR7dAiIezBfhg/) -->
 
 ## If any of these projects look interesting, [hire me](/hire)!
