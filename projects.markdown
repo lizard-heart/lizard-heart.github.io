@@ -6,9 +6,7 @@ permalink: /projects/
 ## Wolfram Language Projects
 - [Game graphs of Tic-Tac-Toe-like games](https://community.wolfram.com/groups/-/m/t/2317406)
 - [Quantifying language efficiency](https://community.wolfram.com/groups/-/m/t/2456491)
-
-## Siri Shortcuts
-[My archive of Siri Shortcuts](/shortcuts/)
+- [Optimizing traffic light timings in simulated cities](https://community.wolfram.com/groups/-/m/t/2579941)
 
 ## Obsidian Plugins
 - [comment plugin](https://github.com/lizard-heart/comment-plugin-obsidian)
@@ -16,11 +14,16 @@ adds pane for comments about a note similar to google docs. use a shared syncing
 - [journey presentation](https://github.com/lizard-heart/obsidian-journey-presentation)
 creates a presentation with a slide for each obsidian note in a chain from one to another
 - [wordnik definitions](https://github.com/lizard-heart/obsidian-wordnik-definitions) pastes definitions from wordnik.com into a note (either the title of the note or a custom search term)
+- [content pusher](https://github.com/lizard-heart/obsidian-note-content-pusher) add (prepend or append) specified content to a note (existing or new) without opening another pane
+- [order list plugin](https://github.com/lizard-heart/obsidian-order-list-plugin) reorders a list of items in a note by the number at the end
 
 ## OmniFocus Plugins
 - [start toggl timer](https://github.com/lizard-heart/omni-focus-start-toggl-timer)
 - [airtable sync](https://github.com/lizard-heart/omnifocus-airtable)
 - [email processing](https://github.com/lizard-heart/omnifocus-email-processing)
+
+## Siri Shortcuts
+[My archive of Siri Shortcuts](/shortcuts/)
 
 ## Miscellaneous
 - [card trick mind reader](/card-trick/)
