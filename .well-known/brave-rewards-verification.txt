@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: lizard-heart.github.io
+Token: 2794de6116d779f0c91f0d8504f77a6ce17ed122fe69a88682d75cb03233ddbb
