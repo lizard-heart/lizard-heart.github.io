@@ -43,6 +43,8 @@ header_pages:
 
 google_site_verification: m32R8E0AfeGZWideP4vVJ0bTDn4uGvYN6slPOEtdpTY
 
+include: [".well-known"]
+
 minima:
   skin: dark
   social_links:
