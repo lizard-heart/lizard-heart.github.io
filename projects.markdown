@@ -11,6 +11,7 @@ permalink: /projects/
 
 
 ## Obsidian Plugins
+- [obsidian to omnifocus](https://github.com/lizard-heart/obsidian-to-omnifocus) exports tasks from obsidian to omnifocus
 - [comment plugin](https://github.com/lizard-heart/comment-plugin-obsidian)
 adds pane for comments about a note similar to google docs. use a shared syncing service and different usernames to collaborate.
 - [journey presentation](https://github.com/lizard-heart/obsidian-journey-presentation)
@@ -19,7 +20,7 @@ creates a presentation with a slide for each obsidian note in a chain from one t
 - [content pusher](https://github.com/lizard-heart/obsidian-note-content-pusher) add (prepend or append) specified content to a note (existing or new) without opening another pane
 - [order list plugin](https://github.com/lizard-heart/obsidian-order-list-plugin) reorders a list of items in a note by the number at the end
 - [custom reading time](https://github.com/lizard-heart/obsidian-custom-reading-time) adds two reading times to the status based on two customizable formulas
-- [convert admonition to quarto](https://github.com/lizard-heart/admonition-to-quarto) converts admonition-style callouts to a .qmd file with quarto callouts and vice versa
+- [convert admonition to quarto](https://github.com/lizard-heart/admonition-to-quarto) converts admonition-style callouts to a `.qmd` file with quarto callouts and vice versa
 - [rickies chairman obsidian](https://github.com/lizard-heart/rickies-chairman-obsidian) adds a command to paste the current [rickies chairman](https://rickies.net/) of the [connected podcast](https://www.relay.fm/connected)
 
 ## OmniFocus Plugins
@@ -28,7 +29,7 @@ creates a presentation with a slide for each obsidian note in a chain from one t
 - [email processing](https://github.com/lizard-heart/omnifocus-email-processing)
 
 ## Siri Shortcuts
-[My archive of Siri Shortcuts](/shortcuts/)
+[my archive of Siri Shortcuts](/shortcuts/)
 
 ## Miscellaneous
 - [card trick mind reader](/card-trick/)
@@ -36,7 +37,7 @@ creates a presentation with a slide for each obsidian note in a chain from one t
 - [snake](https://snake.lizardheart.repl.co)
 - [dark css theme for wikipedia](https://github.com/lizard-heart/wikiDarkMode) which looks a lot like this site
 - [atom package for bunch syntax](https://atom.io/packages/language-bunch)
-    - [Read about the plugin here](/coding/project/2022/03/20/bunch/)
+    - [read about the plugin here](/coding/project/2022/03/20/bunch/)
 
 <!-- ## YouTube Videos
 - [Watch all videos I have made here](/videos/)
