@@ -16,6 +16,8 @@ layout: default
     {% assign posts = site.posts %}
   {% endif %}
 
+  {% include card-list.html collection=site.data.home.project_entries %}
+
 
   {%- if posts.size > 0 -%}
     {%- if page.list_title -%}

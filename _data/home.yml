@@ -1,0 +1,22 @@
+misc_project_entries:
+  - title: card trick
+    url: /card-trick
+    desc: card trick mind reader
+
+  - title: collatz ratios
+    url: https://github.com/lizard-heart/collatz-ratios
+    desc: collatz ratios
+
+  - title: snake
+    url: /snake.html
+    desc: snake game
+
+  - title: dark wikipedia
+    url: https://github.com/lizard-heart/wikiDarkMode
+    desc: dark css theme for wikipedia which looks a lot like this site
+    highlight: WIP
+
+  - title: bunch atom package
+    url: https://atom.io/packages/language-bunch
+    desc: atom package for bunch syntax
+    highlight: OLD

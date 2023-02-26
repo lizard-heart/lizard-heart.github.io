@@ -3,6 +3,9 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
+
+
+
 ## Wolfram Language Projects
 - [Sub-axiomatic foundations of group theory in SK combinators](https://community.wolfram.com/groups/-/m/t/2818259)
 - [Optimizing traffic light timings in simulated cities](https://community.wolfram.com/groups/-/m/t/2579941)
@@ -32,6 +35,7 @@ creates a presentation with a slide for each obsidian note in a chain from one t
 [my archive of Siri Shortcuts](/shortcuts/)
 
 ## Miscellaneous
+{% include card-list.html collection=site.data.home.misc_project_entries %}
 - [card trick mind reader](/card-trick/)
 - [collatz ratios](https://github.com/lizard-heart/collatz-ratios)
 - [snake](https://snake.lizardheart.repl.co)
