@@ -20,3 +20,71 @@ misc_project_entries:
     url: https://atom.io/packages/language-bunch
     desc: atom package for bunch syntax
     highlight: OLD
+
+wolfram_projects:
+  - title: Sub-axiomatic foundations of group theory in SK combinators
+    url: https://community.wolfram.com/groups/-/m/t/2818259
+    image: assets/combinator.jpg
+
+  - title: Optimizing traffic light timings in simulated cities
+    url: https://community.wolfram.com/groups/-/m/t/2579941
+    image: assets/traffic.jpg
+
+  - title: Quantifying language efficiency
+    url: https://community.wolfram.com/groups/-/m/t/2456491
+    image: assets/language.jpg
+
+  - title: Game graphs of Tic-Tac-Toe-like games
+    url: https://community.wolfram.com/groups/-/m/t/2317406
+    image: assets/tictactoe.jpg
+
+omnifocus_plugins:
+  - title: start toggl timer
+    url: https://github.com/lizard-heart/omni-focus-start-toggl-timer
+    desc: starts a toggl timer for the selected task based on its tags and project
+  
+  - title: airtable sync
+    url: https://github.com/lizard-heart/omnifocus-airtable
+    desc: syncs omnifocus tasks with airtable and vice versa
+
+  - title: email processing
+    url: https://github.com/lizard-heart/omnifocus-email-processing
+    desc: processes emails sent to your omnifocus inbox based on subject and sender
+
+obsidian_plugins:
+  - title: obsidian to omnifocus
+    url: https://github.com/lizard-heart/obsidian-to-omnifocus
+    desc: obsidian to omnifocus exports tasks from obsidian to omnifocus
+
+  - title: comment plugin
+    url: https://github.com/lizard-heart/comment-plugin-obsidian
+    desc: comment plugin adds pane for comments about a note similar to google docs. use a shared syncing service and different usernames to collaborate
+
+  - title: journey presentation
+    url: https://github.com/lizard-heart/obsidian-journey-presentation
+    desc: journey presentation creates a presentation with a slide for each obsidian note in a chain from one to another
+
+  - title: wordnik definitions
+    url: https://github.com/lizard-heart/obsidian-wordnik-definitions
+    desc: wordnik definitions pastes definitions from wordnik.com into a note (either the title of the note or a custom search term)
+
+  - title: content pusher
+    url: https://github.com/lizard-heart/obsidian-note-content-pusher
+    desc: content pusher add (prepend or append) specified content to a note (existing or new) without opening another pane
+    highlight: WIP
+  
+  - title: order list plugin
+    url: https://github.com/lizard-heart/obsidian-order-list-plugin
+    desc: order list plugin reorders a list of items in a note by the number at the end
+
+  - title: custom reading time
+    url: https://github.com/lizard-heart/obsidian-custom-reading-time
+    desc: custom reading time adds two reading times to the status based on two customizable formulas
+
+  - title: admonition to quarto
+    url: https://github.com/lizard-heart/admonition-to-quarto
+    desc: convert admonition to quarto converts admonition-style callouts to a .qmd file with quarto callouts and vice versa
+
+  - title: rickies chairman obsidian
+    url: https://github.com/lizard-heart/rickies-chairman-obsidian
+    desc: rickies chairman obsidian adds a command to paste the current rickies chairman of the connect podcast

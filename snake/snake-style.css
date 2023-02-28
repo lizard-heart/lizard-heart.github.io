@@ -14,3 +14,22 @@ body {
     /* This centers our sketch vertically. */
     align-items: center;
 }
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #1c1c1c;
+    border: 1px solid #fff;
+    padding: 10px;
+    color: #53e04f;
+    text-decoration: none;
+}
+
+h1 {
+    position: absolute;
+    top: 10px;
+    padding: 10px;
+    color: #d442f8;
+    font-size: 48;
+}
