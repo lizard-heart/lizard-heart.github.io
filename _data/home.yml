@@ -5,7 +5,7 @@ misc_project_entries:
 
   - title: collatz ratios
     url: https://github.com/lizard-heart/collatz-ratios
-    desc: collatz ratios
+    desc: find rate that collatz sequence converges to 1
 
   - title: snake
     url: /snake.html
@@ -95,3 +95,29 @@ obsidian_plugins:
   - title: rickies chairman obsidian
     url: https://github.com/lizard-heart/rickies-chairman-obsidian
     desc: rickies chairman obsidian adds a command to paste the current rickies chairman of the connect podcast
+
+fav_project_entries:
+  - title: obsidian to omnifocus
+    url: https://github.com/lizard-heart/obsidian-to-omnifocus
+    desc: obsidian to omnifocus exports tasks from obsidian to omnifocus
+
+  - title: content pusher
+    url: https://github.com/lizard-heart/obsidian-note-content-pusher
+    desc: content pusher add (prepend or append) specified content to a note (existing or new) without opening another pane
+    highlight: WIP
+
+  - title: start toggl timer
+    url: https://github.com/lizard-heart/omni-focus-start-toggl-timer
+    desc: starts a toggl timer for the selected task based on its tags and project
+
+  - title: Sub-axiomatic foundations of group theory in SK combinators
+    url: https://community.wolfram.com/groups/-/m/t/2818259
+    image: projects/assets/combinator.jpg
+
+  - title: Minimal YouTube
+    url: https://github.com/lizard-heart/minimal-youtube
+    desc: Arc Browser boost (or chrome extension) to hide comments and recommended videos on youtube and make certain elements clearer.
+
+  - title: collatz ratios
+    url: https://github.com/lizard-heart/collatz-ratios
+    desc: find rate that collatz sequence converges to 1

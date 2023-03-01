@@ -7,7 +7,7 @@ permalink: /projects/
 
 
 ## Wolfram Language Projects
-{% include card-list-image.html collection=site.data.home.wolfram_projects %}
+{% include card-list.html collection=site.data.home.wolfram_projects %}
 
 ## Obsidian Plugins
 these are plugins i made for the [Obsidian](https://obsidian.md/) note-taking app
