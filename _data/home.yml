@@ -21,6 +21,13 @@ misc_project_entries:
     desc: atom package for bunch syntax
     highlight: OLD
 
+  - title: Minimal YouTube
+    url: https://github.com/lizard-heart/minimal-youtube
+    desc: Arc Browser boost (or chrome extension) to hide comments and recommended videos on youtube and make certain elements clearer.
+
+  # - title: DuckDuckGo ChatGPT
+  #   url: 
+
 wolfram_projects:
   - title: Sub-axiomatic foundations of group theory in SK combinators
     url: https://community.wolfram.com/groups/-/m/t/2818259
