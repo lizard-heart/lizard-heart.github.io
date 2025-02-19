@@ -28,5 +28,3 @@ these are plugins i made for the [OmniFocus](https://www.omnigroup.com/omnifocus
 <!-- ## YouTube Videos
 - [Watch all videos I have made here](/videos/)
 - [Subscribe to my YouTube channel here](https://www.youtube.com/channel/UC0ZCat9S6KoR7dAiIezBfhg/) -->
-
-## If any of these projects look interesting, [hire me](/hire)!
