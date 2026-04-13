@@ -30,7 +30,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-google_analytics: "G-LFTJCSZ3S9"
+google_analytics: "G-36L7C3TQ3V"
 
 author:
   name: Henry Gustafson
@@ -39,7 +39,7 @@ author:
 header_pages:
   # - about.markdown
   - projects.markdown
-  - henry-cv.pdf
+  - teaching.markdown
   # - hire.markdown
 
 google_site_verification: m32R8E0AfeGZWideP4vVJ0bTDn4uGvYN6slPOEtdpTY
